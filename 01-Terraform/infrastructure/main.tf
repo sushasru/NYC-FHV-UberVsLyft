@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 provider "google" {
-  credentials = "${file("CREDENTIALS_FILE.json")}"
+  #credentials = "${file("CREDENTIALS_FILE.json")}"
   project     = "dtc-de-NYCTLC-Susha"
   region      = var.google_region
 }
