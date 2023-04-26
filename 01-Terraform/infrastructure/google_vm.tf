@@ -1,9 +1,9 @@
-resource "google_service_account" "default"{
+resource "google_service_account" "dtc-de-NYCTLC-Susha"{
     account_id = "dtc-de-nyctlc-susha"
     display_name="dtc-de-NYCTLC-Susha"
 }
 
-resource "google_compute_instance" "default" {
+resource "google_compute_instance" "dtc-de-NYCTLC-Susha" {
   name         = "nyc-fhvhv"
   machine_type = "e2-standard-4"
   zone         = var.google_region
