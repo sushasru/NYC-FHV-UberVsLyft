@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "tripdata" {
-  bucket = "nyc-fhvhv-tripdata-test"
+  bucket = "nyc-fhvhv-tripdata"
 }
 
 resource "aws_s3_bucket_ownership_controls" "tripdata" {
