@@ -1,4 +1,4 @@
-resource "google_service_account" "dtc-de-NYCTLC-Susha"{
+resource "google_service_account" "dtc-de-gcs-SA"{
     account_id = "dtc-de-nyctlc-susha"
     display_name="dtc-de-NYCTLC-Susha"
 }
