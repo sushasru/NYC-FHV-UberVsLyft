@@ -4,6 +4,10 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 4.0"
     }
+    google = {
+      source  = "hashicorp/google"
+      version = "~> 4.0"
+    }
   }
 }
 
@@ -13,7 +17,7 @@ provider "aws" {
 }
 
 provider "google" {
-  #credentials = "${file("CREDENTIALS_FILE.json")}"
-  project     = "dtc-de-nyctlc-susha"
-  region      = var.google_region
+  project = "nyc-fhvhv"
+  region  = var.google_region
 }
+
