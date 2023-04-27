@@ -20,7 +20,11 @@ resource "google_compute_instance" "nyc-fhvhvvm" {
   }
 
   network_interface {
-    network = "default"
+    network = google_compute_network.vpc_network.name
+
+    access_config {
+      nat_ip = google_compute_address.static_ip.address
+    }
   }
 }
 
