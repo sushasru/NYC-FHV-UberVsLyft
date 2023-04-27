@@ -22,8 +22,9 @@ resource "google_compute_instance" "nyc-fhvhvvm" {
   network_interface {
     network = "default"
   }
+}
 
-  resource "google_compute_firewall" "allow_ssh" {
+resource "google_compute_firewall" "allow_ssh" {
   name          = "allow-ssh"
   network       = google_compute_network.vpc_network.name
   target_tags   = ["allow-ssh"] // this targets our tagged VM
@@ -33,6 +34,4 @@ resource "google_compute_instance" "nyc-fhvhvvm" {
     protocol = "tcp"
     ports    = ["22"]
   }
-}
-
 }
