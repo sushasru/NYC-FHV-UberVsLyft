@@ -6,7 +6,7 @@
 resource "google_compute_instance" "nyc-fhvhv-vm" {
   name         = var.instance_name
   machine_type = "e2-standard-4"
-  zone         = var.google_region
+  zone         = var.google_zone
 
   boot_disk {
     initialize_params {

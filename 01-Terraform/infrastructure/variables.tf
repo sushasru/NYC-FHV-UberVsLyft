@@ -3,6 +3,10 @@ variable "aws_region" {
 }
 
 variable "google_region" {
+  default = "us-east4"
+}
+
+variable "google_zone" {
   default = "us-east4-c"
 }
 
