@@ -24,6 +24,10 @@ resource "google_compute_instance" "nyc-fhvhvvm" {
   }
 }
 
+resource "google_compute_network" "vpc_network" {
+  name = "nyc-fhvhvvm-network"
+}
+
 resource "google_compute_firewall" "allow_ssh" {
   name          = "allow-ssh"
   network       = google_compute_network.vpc_network.name
