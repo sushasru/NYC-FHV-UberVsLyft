@@ -27,7 +27,7 @@ resource "google_compute_instance" "nyc-fhvhvvm" {
     }
   }
 
-  metadata_startup_script = "pip install -r ../files/requirements.txt"
+  metadata_startup_script = "sudo apt-get update && sudo apt-get install -y python3 python3-pip && pip3 install prefect"
 }
 
 resource "google_compute_address" "static_ip" {
