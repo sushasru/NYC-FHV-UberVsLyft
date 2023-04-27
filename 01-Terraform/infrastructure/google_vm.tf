@@ -3,7 +3,7 @@
     display_name="dtc-de-NYCTLC-Susha"
 }*/
 
-resource "google_compute_instance" "nyc-fhvhv-vm-Name" {
+resource "google_compute_instance" "nyc-fhvhv-vm" {
   name         = var.instance_name
   machine_type = "e2-standard-4"
   zone         = var.google_region
@@ -21,10 +21,6 @@ resource "google_compute_instance" "nyc-fhvhv-vm-Name" {
 
   network_interface {
     network = "default"
-
-    access_config {
-      // Ephemeral public IP
-    }
   }
 
 }
