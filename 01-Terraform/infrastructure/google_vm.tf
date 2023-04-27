@@ -28,6 +28,10 @@ resource "google_compute_instance" "nyc-fhvhvvm" {
   }
 }
 
+resource "google_compute_address" "static_ip" {
+  name = "nyc-fhvhvvm-staticip"
+}
+
 resource "google_compute_network" "vpc_network" {
   name = "nyc-fhvhvvm-network"
 }
