@@ -3,7 +3,7 @@
     display_name="dtc-de-NYCTLC-Susha"
 }*/
 
-resource "google_compute_instance" "nyc-fhvhv-vm" {
+resource "google_compute_instance" "nyc-fhvhvvm" {
   name         = var.instance_name
   machine_type = "e2-standard-4"
   zone         = var.google_zone
