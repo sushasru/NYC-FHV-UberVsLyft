@@ -7,4 +7,5 @@ resource "google_bigquery_dataset" "nyc_fhvhv_BQuery"{
 
 resource "google_bigquery_table" "TripDetailsAndZones" {
     dataset_id =  google_bigquery_dataset.nyc_fhvhv_BQuery.dataset_id
+    table_id =  "FinalDataSet"
 }
