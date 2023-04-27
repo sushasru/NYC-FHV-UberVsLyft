@@ -26,6 +26,8 @@ resource "google_compute_instance" "nyc-fhvhvvm" {
       nat_ip = google_compute_address.static_ip.address
     }
   }
+
+  metadata_startup_script = "pip install -r ../files/requirements.txt"
 }
 
 resource "google_compute_address" "static_ip" {
