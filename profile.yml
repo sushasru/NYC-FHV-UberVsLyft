@@ -5,7 +5,7 @@ nyc_fhvhv: # this needs to match the profile: in your dbt_project.yml file
       type: bigquery
       method: service-account
       project: nyc-fhvhv # Replace this with your project id
-      dataset: production # Replace this with dbt_your_name, e.g. dbt_bob
+      dataset: dbt_ssubramaniaru # Replace this with dbt_your_name, e.g. dbt_bob
       threads: 4
       timeout_seconds: 300
       location: us-east4
