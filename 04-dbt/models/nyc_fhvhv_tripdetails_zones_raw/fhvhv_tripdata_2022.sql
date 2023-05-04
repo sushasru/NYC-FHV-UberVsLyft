@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='view') }}
 
 select distinct {{getridetype('hvfhs_license_num')}} as ride_type
         ,DATETIME(pickup_datetime,"America/New_York") as pickup_datetime
