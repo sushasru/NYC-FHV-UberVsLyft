@@ -15,7 +15,7 @@ sources:
 
 
 models:
-    - name: fhvhv_tripdata - 2019 to 2022
+    - name: fhvhv_tripdata_2019-07
       description: >
         Trip made by uber, lyft, juno and Via for the month of July for years - 2019, 2020, 2021 and 2022.
         The records were collected and provided to the NYC Taxi and Limousine Commission (TLC) by
