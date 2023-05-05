@@ -1,4 +1,4 @@
-
+02-Prefect/scripts/prefect-env/
 01-Terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/4.64.0/darwin_arm64/terraform-provider-aws_v4.64.0_x5
 01-Terraform/.terraform.lock.hcl
 01-Terraform/infrastructure/.DS_Store
@@ -8,3 +8,6 @@
 01-Terraform/infrastructure/.terraform/providers/registry.terraform.io/hashicorp/external/2.3.1/darwin_arm64/terraform-provider-external_v2.3.1_x5
 01-Terraform/infrastructure/.terraform/providers/registry.terraform.io/hashicorp/google/4.63.1/darwin_arm64/terraform-provider-google_v4.63.1_x5
 01-Terraform/infrastructure/.terraform/providers/registry.terraform.io/hashicorp/null/3.2.1/darwin_arm64/terraform-provider-null_v3.2.1_x5
+*.parquet
+*.zip
+*.csv
