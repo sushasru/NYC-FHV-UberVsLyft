@@ -14,7 +14,47 @@ The project is to help ride sharing companies assess capacity and monitor the ri
 <li>Google Cloud Storage - For storing parquet files from NYC trip-record website.</li>
 <li>BigQuery - For storing data in support of querying and visualization</li>
 <li>Google Looker Studio - For data visualization</li>
+  
+                             +-----------------+
+                             |    Terraform    |
+                             +-----------------+
+                             | Google Cloud    |
+                             | Storage module  |
+                             | BigQuery module |
+                             +-------+---------+
+                                     |
+                                     |
+                                     |
+                          +----------+-----------+
+                          |     Prefect          |
+                          |Workflow Orchestration|
+                          +----------+-----------+
+                                     |
+                                     |
+                          +----------+------------+
+                          |        DBT            |
+                          |  Data Transformations |
+                          +----------+------------+
+                                     |
+                                     |
+                         +-----------+----------+
+                         | Google Cloud Storage |
+                         +-----------+----------+
+                                     |
+                                     |
+                         +-----------+----------+
+                         |       BigQuery      |
+                         +-----------+----------+
+                                     |
+                                     |
+                         +-----------+-----------+
+                         | Google Looker Studio  |
+                         |   Data Visualization  |
+                         +-----------------------+
+
 </ul>
 
 <h2>Dashboard</h2>
 <a href="https://lookerstudio.google.com/reporting/1027fd17-6bd4-4c0d-a98a-d318f0de86c7">Click here for the dashboard </a>
+
+
